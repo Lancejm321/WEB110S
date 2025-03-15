@@ -1,44 +1,67 @@
 /* This is a CSS Comment */
 
-            body{
-                font-family:"Arial", sans-serif;
-                background-color: #d7c7aa;
-                color: #926f4f;
-                font-size: 16px;
-            }
+body{
+    font-family:"Arial", sans-serif;
+    background-color: #d7c7aa;
+    color: #926f4f;
+    font-size: 16px;
+    font-weight:bold;
+    background-image: url(background.jpg);
+    background-repeat: repeat-x;
+}
 
-            header{
-                background-color: #00602b; /* green */
-                text-align: center;
-                font-size: 30px;
-                font-weight: bold;
-                font-style: italic;
-                color: #ffffff;
-            }
+header{
+    background-color: #00602b; /* green */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+}
 
-            h2,h3{
-            color: #342517;
-            }
+h2,h3{
+color: #342517;
+}
 
-            p{
-                color: #230e06;
-                background-color:#ffffff;
-            }
+p{
+    color: #230e06;
+    background-color:#ffffff;
+}
 
-            .highlight{
-                font-weight: bold;
-                color: #ee1e28;
-                font-style: italic;
-            }
+.highlight{
+    font-weight: bold;
+    color: #ee1e28;
+    font-style: italic;
+}
 
-            .special-item{
-                background-color: #ffffff;
-            }
+.special-item{
+    background-color: #ffffff;
+}
 
-            footer{
-                text-align: center;
-                color: white;
-                background-color: #bb161d;
-            }
+footer{
+    text-align: center;
+    color: white;
+    background-color: #bb161d;
+}
 
+nav{
+    height:35px;
+}
 
+a:link{
+    color:#8b1010;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color:#000;
+    color:#fff;
+}
+
+a:visited{
+    color:#00602b;
+    background-color:#fff;
+}
