@@ -1,0 +1,101 @@
+/* Jason Lance 04/03/2025 */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+  h2 {
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+  }
+
+  main {
+    background-color: #ffffff;
+  }
+
+  section {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+
+  main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+ 
+  img {
+    max-width: 70%;
+    height: 70%;
+    opacity:.7; 
+  }
+
+  img:hover {
+    border: 1px solid #ddc10f;
+    opacity: 1;
+    transform: scale( 1.2); 
+    transition: transform 0.5s ease-in-out; 
+  }
+
+  footer {
+    text-align: center;
+    background-color:  #da1010;
+    color:#ffffff;
+  }
+
+
+  .heading {
+    margin: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "comic sans ms";
+  }
+
+  .desc{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-family: 'Times New Roman';
+  }
+
+ #wrapper {
+  width: 90%;
+  margin: auto;
+  background-color: #e40909;
+  border: 2px solid rgb(255, 255, 255);
+ }
+
+
+  nav {
+    border: 2px solid #dfdf28;
+    background-color: #dfdf28;
+    font-weight: bold;
+    text-align: center;
+    font-size: 120%;
+          }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.2em;
+  }
+  nav li {
+    display: inline; 
+    padding: 10px;
+  }
+  nav a {
+    text-decoration: none;
+  }
+  nav a:link {
+    color: #000000;
+  }
+  nav a:visited {
+    color: #2d0540;
+  }
+  nav a:hover {
+    color: #c6d02f;
+  }
