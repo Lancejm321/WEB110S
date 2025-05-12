@@ -108,6 +108,13 @@ img {
     height: auto;
 }
 
+img:hover {
+    border: 1px solid #ddc10f;
+    opacity: 1;
+    transform: scale( 2); 
+    transition: transform 0.5s ease-in-out; 
+}
+
 /* Footer Styling */
 footer {
     background-color: rgba(50, 50, 50, 0.7);
