@@ -5,121 +5,140 @@
     box-sizing: border-box;
 }
 
-/* body styling */
+/* Wrapper container */
+#wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e0037;
+    border: 2px solid rgb(255, 255, 255);
+    text-align: center;
+}
+
+
 body {
     background-image: url('galaxy_background.jpg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    font-family: 'Cabin Sketch', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     line-height: 1.6;
 }
 
-p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-/* header styling */
+/* Header */
 header {
     text-align: center;
     padding: 2rem;
-    background: rgba(50, 50, 50, 0.7);
+    background: rgba(80, 0, 120, 0.7);
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
-/* nav styling */
-nav {
-    background-color: rgba(50, 50, 50, 0.7);
-    padding: 1rem;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-nav ul li {
-    font-size: 1.2rem;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #492d52;
-}
-
-/* Main Content Styling */
-main {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 1rem;
-}
-
-/* Section Styling */
-section {
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    margin-bottom: 3rem;
-    padding: 2rem;
-    border-radius: 8px;
-    text-align: center;
-}
-
-li {
-    font-family: 'Cabin Sketch';
-    font-weight: bold;
-    font-size: 1.5rem; /* Increased font size */
-    margin-bottom: 0.5rem;
-}
-
+/* Headings */
 h1 {
     font-size: 3rem;
     text-transform: uppercase;
     color: #fff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
-
 h2 {
     font-size: 2rem;
-    color: #552f47;
+    color: #ba90f0;
     margin-bottom: 10px;
     text-decoration: underline;
 }
-
 h3 {
     margin-top: 1rem;
 }
 
-/* Image Styling */
+/* Nav */
+nav {
+    background-color: rgba(80, 0, 120, 0.7);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+}
+nav li {
+    display: inline;
+    padding: 10px;
+}
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+nav a:hover {
+    color: #ffdaff;
+}
+
+/* Main content */
+main {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+    flex: 1;
+}
+
+/* Flex container for layout */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px;
+}
+.flex-container section {
+    flex: 1 1 250px;
+    max-width: 350px;
+}
+
+/* Section cards */
+section {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+/* List items */
+li {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Images */
 img {
+    max-width: 100%;
     border: 4px solid #fff;
     border-radius: 8px;
     margin-top: 20px;
-    max-width: 100%;
-    height: auto;
+    object-fit: cover;
 }
-
 img:hover {
-    border: 1px solid #ddc10f;
-    opacity: 1;
-    transform: scale( 2); 
-    transition: transform 0.5s ease-in-out; 
+    border: 2px solid #ddc10f;
+    transform: scale(2);
+    transition: transform 0.3s ease-in-out;
 }
 
-
-/* Footer Styling */
+/* Footer */
 footer {
-    background-color: rgba(50, 50, 50, 0.7);
+    background-color: rgba(80, 0, 120, 0.7);
     padding: 1rem;
     text-align: center;
     color: #fff;
@@ -127,77 +146,27 @@ footer {
     margin-top: 20px;
 }
 
-/* Links and Hover Effects */
-a {
-    color: #552f47;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #fff;
-}
-
-/* Table Styling (for future reference) */
 table {
-    width: 100%;
+    margin: 20px auto;
     border-collapse: collapse;
-    margin-top: 20px;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    background-color: #000000;
+    border: 2px solid #000000;
 }
 
-table, th, td {
-    border: 1px solid #fff;
+th, td {
     padding: 10px;
+    border: 1px solid #333333;
 }
 
 th {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-td {
-    background-color: rgba(255, 255, 255, 0.05);
-}
-
-/* Form Page Styling */
-form {
-    background-color: rgba(50, 50, 50, 0.7);
-    padding: 2rem;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-form input, form textarea, form select {
-    width: 100%;
-    padding: 1rem;
-    margin: 10px 0;
-    border-radius: 8px;
-    border: 1px solid #fff;
-}
-
-form input[type="submit"], form input[type="reset"] {
-    background-color: #552f47;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-}
-
-form input[type="submit"]:hover, form input[type="reset"]:hover {
-    background-color: #fff;
-    color: #552f47;
-}
-
-form label {
-    display: block;
-    margin-bottom: 0.5rem;
+    background-color: rgba(80, 0, 120, 0.7);
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
-
-textarea {
-    resize: vertical;
-}
-
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;

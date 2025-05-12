@@ -4,56 +4,85 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Cabin Sketch" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Contact Form</title>  
 </head>
+<style>
+    form {
+        background-color: rgba(80, 0, 120, 0.7);
+        padding: 2rem;
+        border-radius: 8px;
+    }
+
+    form input, form textarea, form select {
+        width: 100%;
+        padding: 1rem;
+        margin: 10px 0;
+        border-radius: 8px;
+        border: 1px solid #fff;
+    }
+
+    form input[type="submit"], form input[type="reset"] {
+        background-color: #ba90f0;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+    form input[type="submit"]:hover, form input[type="reset"]:hover {
+        background-color: #fff;
+        color: #552f47;
+    }
+</style>
 <body>
-    <header>
-        <h1>Contact Us</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="planets.html">Planets in Our Galaxy</a></li>
-            <li><a href="andromeda.html">The Andromeda Galaxy</a></li>
-            <li><a href="exploration.html">Space Exploration</a></li>
-            <li><a href="form.html">Join Space Exploration</a></li>
-            <li><a href="credits.html">Credits</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Get in Touch</h2>
-            <p>If you have any questions or would like to learn more about space exploration, feel free to fill out the form below, and I'll get back to you as soon as possible!</p>
-            <form action="submit_form.php" method="POST">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+    <div id="wrapper">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planets.html">Planets in Our Galaxy</a></li>
+                <li><a href="andromeda.html">The Andromeda Galaxy</a></li>
+                <li><a href="exploration.html">Space Exploration</a></li>
+                <li><a href="form.html">Join Space Exploration</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Get in Touch</h2>
+                <p>If you have any questions or would like to learn more about space exploration, feel free to fill out the form below, and I'll get back to you as soon as possible!</p>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
 
-                <label for="interest">What are you most interested in?</label>
-                <select id="interest" name="interest">
-                    <option value="planets">Planets</option>
-                    <option value="exploration">Space Exploration</option>
-                    <option value="astronomy">Astronomy</option>
-                    <option value="other">Other</option>
-                </select>
+                    <label for="interest">What are you most interested in?</label>
+                    <select id="interest" name="interest">
+                        <option value="planets">Planets</option>
+                        <option value="exploration">Space Exploration</option>
+                        <option value="astronomy">Astronomy</option>
+                        <option value="other">Other</option>
+                    </select>
 
-                <label for="subscribe">Would you like to receive updates on space exploration?</label>
-                <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Would you like to receive updates on space exploration?</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
 
-                <div class="form-buttons">
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                </div>
-            </form>
-        </section>
-    </main>
-    <footer>&copy; Jason Lance 2025 - Johnson County Community College</footer>
+                    <div class="form-buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>&copy; Jason Lance 2025 - Johnson County Community College</footer>
+    </div>
 </body>
 </html>
