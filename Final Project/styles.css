@@ -1,10 +1,11 @@
+/*Jason Lance Final Project 05/12/2025*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Body Styling */
+/* body styling */
 body {
     background-image: url('galaxy_background.jpg.jpg');
     background-repeat: no-repeat;
@@ -19,7 +20,7 @@ p {
     margin-bottom: 1rem;
 }
 
-/* Header Styling */
+/* header styling */
 header {
     text-align: center;
     padding: 2rem;
@@ -28,7 +29,7 @@ header {
     margin-bottom: 20px;
 }
 
-/* Navigation Styling */
+/* nav styling */
 nav {
     background-color: rgba(50, 50, 50, 0.7);
     padding: 1rem;
@@ -114,6 +115,7 @@ img:hover {
     transform: scale( 2); 
     transition: transform 0.5s ease-in-out; 
 }
+
 
 /* Footer Styling */
 footer {
